@@ -8,8 +8,8 @@ input {
 	font-size: 20px;
 }
 
-input.input-number {
-	width: 30px;
+input.input-text {
+	margin-top: 40px;
 }
 
 input.input-submit {
@@ -17,11 +17,11 @@ input.input-submit {
 	padding: 16px;
 	border-radius: 5px;
 	color: white;
-	background-color: rgb(131, 155, 188);
+	background-color: rgb(91, 130, 186);
 }
 
 input.input-submit:hover {
-	color: rgb(131, 155, 188);
+	color: rgb(91, 130, 186);
 	background-color: white;
 	cursor: pointer;
 	transition: 0.3s;

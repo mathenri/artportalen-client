@@ -15,7 +15,7 @@ export const fetchSightings = () => {
 
 		// send request to api
 		const url = `https://api.artdatabanken.se/sandbox-observations-r/v2
-			/sightings?speciesGroupId=8&dateFrom=2018-04-01&dateTo=2018-06.01`;
+			/sightings?speciesGroupId=8&dateFrom=2018-07-02&dateTo=2018-07-09&limit=100`;
 
 		const request = new Request(url, {
 			headers: new Headers({
