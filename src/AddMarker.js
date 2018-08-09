@@ -31,8 +31,9 @@ class AddMarker extends Component {
 		return (
 			<form onSubmit={this.handleSubmit}>
 				<label>
-					Lat:
+					Lat:{" "}
 					<input 
+						className="input-number"
 						name="lat" 
 						type="number" 
 						value={this.state.lat} 
@@ -40,8 +41,9 @@ class AddMarker extends Component {
 					/>
 				</label>
 				<label>
-					Lng:
+					Lng:{" "}
 					<input 
+						className="input-number"
 						name="lng" 
 						type="number" 
 						value={this.state.lng} 
@@ -49,15 +51,20 @@ class AddMarker extends Component {
 					/>
 				</label>
 				<label>
-					Text:
+					Text:{" "}
 					<input 
+						className="input-text"
 						name="text" 
 						type="text" 
 						value={this.state.text} 
 						onChange={this.handleChange}
 					/>
 				</label>
-				<input type="submit" value="Submit" />
+				<input 
+					type="submit" 
+					value="Submit"
+					className="input-submit" 
+				/>
 			</form>
 		)
 	}

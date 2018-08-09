@@ -5,8 +5,19 @@ import AddMarker from './AddMarker';
 
 const App = () => (
   <div>
-    <SightingsContainer/>
-    <AddMarker/>
+    <div className="banner">
+      <h1>Artportalen</h1>
+    </div>
+
+    <div className="main">
+      <SightingsContainer/>
+      <AddMarker/>
+    </div>
+
+    <footer>
+      <div className="content">
+      </div>
+    </footer>
   </div>
 )
 
