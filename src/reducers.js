@@ -1,17 +1,22 @@
 import { combineReducers } from 'redux'
 
-const sightings = (state = [], action) => {
+const sightings = (
+	state = {
+		isFetching: false,
+		response: {data: []}
+	}, 
+	action
+) => {
 	switch (action.type) {
-		case "ADD_MARKER":
-			return [
-				...state,
-				{
-					coordinates: action.coordinates,
-					text: action.text
-				}
-			]
-		case "CLEAR_MARKERS":
-			return []
+		case "REQUEST_SIGHTINGS":
+			return Object.assign({}, state, {
+				isFetching: true
+			})
+		case "RECEIVE_SIGHTINGS":
+			return Object.assign({}, state, {
+				isFetching: false,
+				response: action.response
+			})
 		default:
 			return state
 	}

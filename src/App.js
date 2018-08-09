@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import SightingsContainer from './SightingsContainer';
-import AddMarker from './AddMarker';
+import FetchSightings from './FetchSightings';
 
 const App = () => (
   <div>
@@ -11,7 +11,7 @@ const App = () => (
 
     <div className="main">
       <SightingsContainer/>
-      <AddMarker/>
+      <FetchSightings/>
     </div>
 
     <footer>
