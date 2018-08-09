@@ -1,0 +1,28 @@
+label {
+	display: block;
+	margin: 10px;
+	font-size: 20px;
+}
+
+input {
+	font-size: 20px;
+}
+
+input.input-number {
+	width: 30px;
+}
+
+input.input-submit {
+	font-size: 20px;
+	padding: 16px;
+	border-radius: 5px;
+	color: white;
+	background-color: rgb(131, 155, 188);
+}
+
+input.input-submit:hover {
+	color: rgb(131, 155, 188);
+	background-color: white;
+	cursor: pointer;
+	transition: 0.3s;
+}

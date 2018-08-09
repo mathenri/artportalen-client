@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchSightings } from './actions'
+import './FetchSightings.css'
 
 class FetchSightings extends Component {
 	constructor(props) {

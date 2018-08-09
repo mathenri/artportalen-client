@@ -45,24 +45,3 @@
 	width: 75%;
 	text-align: center;
 }
-
-label {
-	display: block;
-	margin: 10px;
-	font-size: 20px;
-}
-
-input {
-	font-size: 20px;
-}
-
-input.input-number {
-	width: 30px;
-}
-
-input.input-submit {
-	font-size: 20px;
-	padding: 16px;
-	background: #ccc;
-	border-radius: 5px;
-}
